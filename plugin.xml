@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>HTTP Cache: Forms</label>
+    <label lang="de">HTTP Cache: Formulare</label>
+    <version>1.0.0</version>
+    <license>MIT</license>
+    <link>https://github.com/buddhaCode/BucuFormsHttpCache</link>
+    <author>buddhaCode</author>
+    <description>
+        <![CDATA[
+            <p>This plugin enables HTTP caching, warming and invalidation for forms. Works like caching for shop pages. Standard cache time is 4 days (14400 seconds).</p>
+        ]]>
+    </description>
+    <description lang="de">
+        <![CDATA[
+            <p>Erlaubt das HTTP caching, aufwärmen und invalidieren für Formulare. Funktioniert ähnlich wie das caching für Shopseiten. Die Standard Cache Zeit beträgt 4 Tage (14400 Sekunden).</p>
+        ]]>
+    </description>
+    <compatibility minVersion="5.5.0" />
+    <changelog version="1.0.0">
+        <changes>Initial release</changes>
+        <changes lang="de">Erstveröffentlichung</changes>
+    </changelog>
+</plugin>
