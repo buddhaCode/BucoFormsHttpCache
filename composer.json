@@ -1,0 +1,15 @@
+{
+  "name": "buddha-code/buco-forms-http-cache",
+  "homepage": "https://github.com/buddhaCode/BucoFormsHttpCache",
+  "description": "Shopware plugin to enable HTTP caching for forms",
+  "keywords": ["shopware", "plugin", "http", "cache"],
+  "type": "shopware-plugin",
+  "extra": {
+    "installer-name": "BucoFormsHttpCache"
+  },
+  "license": "GPL-3.0",
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "^1.0"
+  }
+}
