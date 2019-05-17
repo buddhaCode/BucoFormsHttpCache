@@ -6,13 +6,13 @@
 
     <services>
 
-        <service id="bucu_forms_http_cache.subscriber.http_cache" class="BucuFormsHttpCache\Subscriber\HttpCache">
+        <service id="buco_forms_http_cache.subscriber.http_cache" class="BucoFormsHttpCache\Subscriber\HttpCache">
             <argument type="service" id="events"/>
             <tag name="shopware.event_subscriber"/>
         </service>
 
-        <service id="bucu_forms_http_cache.services.http_cache_forms_url_provider"
-                 class="BucuFormsHttpCache\Services\HttpCacheFormsUrlProvider">
+        <service id="buco_forms_http_cache.services.http_cache_forms_url_provider"
+                 class="BucoFormsHttpCache\Services\HttpCacheFormsUrlProvider">
             <argument type="service" id="dbal_connection"/>
             <argument type="service" id="router"/>
             <tag name="cache_warmer.url_provider"/>

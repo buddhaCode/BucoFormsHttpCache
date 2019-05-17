@@ -1,6 +1,6 @@
 <?php
 
-namespace BucuFormsHttpCache;
+namespace BucoFormsHttpCache;
 
 use Shopware\Components\Plugin;
 use Shopware\Components\Plugin\Context\ActivateContext;
@@ -8,10 +8,10 @@ use Shopware\Components\Plugin\Context\DeactivateContext;
 use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
 
-class BucuFormsHttpCache extends Plugin
+class BucoFormsHttpCache extends Plugin
 {
     const CONTROLLER_NAME = 'frontend/forms';
-    const CACHE_KEY = 'bucuF';
+    const CACHE_KEY = 'bucoF';
 
     public function install(InstallContext $context)
     {
@@ -55,7 +55,7 @@ class BucuFormsHttpCache extends Plugin
         $count += $dbal->executeUpdate(<<<'SQL'
             UPDATE s_core_rewrite_urls
             SET org_path = REPLACE(org_path, 'iewport=ticket&', 'iewport=forms&')
-            WHERE org_path LIKE LOWER('sViewport=ticket&%id=%'); -- catch case insensitive viewport  and params id and sFid
+            WHERE org_path LIKE LOWER('sViewport=ticket&%id=%'); -- catch case insensitive viewport and params id and sFid
 SQL
         );
 

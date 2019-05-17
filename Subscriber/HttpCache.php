@@ -1,9 +1,9 @@
 <?php
 
-namespace BucuFormsHttpCache\Subscriber;
+namespace BucoFormsHttpCache\Subscriber;
 
-use BucuFormsHttpCache\BucuFormsHttpCache;
-use BucuFormsHttpCache\Services\CacheIdCollectorDecorator;
+use BucoFormsHttpCache\BucoFormsHttpCache;
+use BucoFormsHttpCache\Services\CacheIdCollectorDecorator;
 use Enlight\Event\SubscriberInterface;
 use Shopware\Components\DependencyInjection\Container;
 use Shopware\Models\Form\Field;
@@ -62,7 +62,7 @@ class HttpCache implements SubscriberInterface
 
         $this->events->notify(
             'Shopware_Plugins_HttpCache_InvalidateCacheId',
-            ['cacheId' => BucuFormsHttpCache::CACHE_KEY . $id]
+            ['cacheId' => BucoFormsHttpCache::CACHE_KEY . $id]
         );
     }
 }

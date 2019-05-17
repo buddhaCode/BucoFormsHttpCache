@@ -1,6 +1,6 @@
 <?php
 
-namespace BucuFormsHttpCache\Services;
+namespace BucoFormsHttpCache\Services;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Query\QueryBuilder;
@@ -10,7 +10,7 @@ use Shopware\Components\Routing\RouterInterface;
 
 class HttpCacheFormsUrlProvider implements UrlProviderInterface
 {
-    const NAME = 'bucuForms';
+    const NAME = 'bucoForms';
 
     /**
      * @var Connection

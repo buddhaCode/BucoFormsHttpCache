@@ -1,8 +1,8 @@
 <?php
 
-namespace BucuFormsHttpCache\Services;
+namespace BucoFormsHttpCache\Services;
 
-use BucuFormsHttpCache\BucuFormsHttpCache;
+use BucoFormsHttpCache\BucoFormsHttpCache;
 use Enlight_Controller_Action as Controller;
 use Enlight_Controller_Request_Request as Request;
 use Shopware\Bundle\StoreFrontBundle\Struct\ShopContextInterface;
@@ -32,7 +32,7 @@ class CacheIdCollectorDecorator
         $controllerName = $this->getControllerRoute($request);
 
         switch ($controllerName) {
-            case BucuFormsHttpCache::CONTROLLER_NAME:
+            case BucoFormsHttpCache::CONTROLLER_NAME:
                 return $this->getFormsCacheIds($request);
 
             default:
@@ -50,7 +50,7 @@ class CacheIdCollectorDecorator
         $formsId = $request->getParam('sFid');
         $formsId = $formsId ?: $request->getParam('id');
 
-        return [BucuFormsHttpCache::CACHE_KEY . (int) $formsId];
+        return [BucoFormsHttpCache::CACHE_KEY . (int) $formsId];
     }
 
     private function getControllerRoute(Request $request) : string
